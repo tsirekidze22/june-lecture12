@@ -1,0 +1,17 @@
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 400px;
+  padding: 50px 0px;
+
+  h1 {
+    font-size: 58px;
+    font-weight: bold;
+    max-width: 600px;
+  }
+  .developer-hero {
+    max-width: 500px;
+    height: 100%;
+  }
+}
