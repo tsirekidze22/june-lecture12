@@ -5,3 +5,24 @@ body {
   max-width: 1204px;
   margin: auto;
 }
+
+// Mixins
+@mixin dFlex(
+  $justifyContent: flex-start,
+  $alignItems: stretch,
+  $columnGap: ""
+) {
+  display: flex;
+  align-items: $alignItems;
+  justify-content: $justifyContent;
+  column-gap: $columnGap;
+}
+
+// Extends
+.card-base {
+  border: 2px solid #000;
+  border-radius: 20px;
+  box-shadow: 2px 2px 100px 0px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 2px 2px 100px 0px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 2px 2px 100px 0px rgba(0, 0, 0, 0.2);
+}
